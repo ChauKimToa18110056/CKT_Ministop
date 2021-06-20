@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'nanodegree'
+            keyPassword 'password'
+            storeFile file("$rootDir/keystore.jks");
+            storePassword 'password'
+        }
+    }
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        applicationId "CKT.Ministop.Apk"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-database:20.0.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.github.chernovdmitriy.injectionholder:androidx:1.0.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'com.fmsirvent:parallaxeverywhere:1.0.4'
+    implementation 'android.arch.lifecycle:common:1.1.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'android.arch.lifecycle:viewmodel:1.1.1'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.3.1'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation 'androidx.fragment:fragment:1.3.5'
+    androidTestImplementation 'androidx.test:core:1.3.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+
+    /**
+     *  support library dependencies
+     **/
+    implementation 'com.android.support:appcompat-v7:' + rootProject.librariesVersions.supportLibraryVersion
+    implementation 'com.android.support:design:' + rootProject.librariesVersions.supportLibraryVersion
+    implementation 'com.android.support:cardview-v7:' + rootProject.librariesVersions.supportLibraryVersion
+    implementation 'com.android.support.constraint:constraint-layout:' + rootProject.librariesVersions.constraintLayoutVersion
+    /**
+     *  room dependencies 'data persistent'
+     **/
+    implementation 'android.arch.persistence.room:runtime:' + rootProject.librariesVersions.roomLibraryVersion
+    annotationProcessor 'android.arch.persistence.room:compiler:' + rootProject.librariesVersions.roomLibraryVersion
+    /**
+     *  firebase sdk dependencies
+     **/
+    implementation 'com.google.firebase:firebase-core:' + rootProject.librariesVersions.firebaseSdkVersion
+    implementation 'com.google.firebase:firebase-database:' + rootProject.librariesVersions.firebaseSdkVersion
+    implementation 'com.firebaseui:firebase-ui-auth:' + rootProject.librariesVersions.firebaseUIVersion
+    /**
+     *  butterKnife dependency 'injecting views'
+     **/
+    implementation 'com.jakewharton:butterknife:' + rootProject.librariesVersions.butterKnifeLibraryVersion
+    annotationProcessor 'com.jakewharton:butterknife-compiler:' + rootProject.librariesVersions.butterKnifeLibraryVersion
+    /**
+     * glide library dependency 'photo processing'
+     **/
+    implementation 'com.github.bumptech.glide:glide:' + rootProject.librariesVersions.glideLibraryVersion
+    annotationProcessor 'com.github.bumptech.glide:compiler:' + rootProject.librariesVersions.glideLibraryVersion
+    /**
+     *  shapeOfView dependency
+     **/
+    implementation 'com.github.florent37:shapeofview:' + rootProject.librariesVersions.shapeOfViewLibraryVersion
+    /**
+     *  kenBurnsView dependency
+     **/
+    implementation 'com.flaviofaria:kenburnsview:' + rootProject.librariesVersions.kenBurnsViewLibraryVersion
+    /**
+     *  transitionEveryWhere dependency
+     **/
+    implementation 'com.andkulikov:transitionseverywhere:' + rootProject.librariesVersions.transitionsEWLibraryVersion
+    /**
+     *  stripe dependency
+     *  just to validate the credit card
+     **/
+    implementation 'com.stripe:stripe-android:' + rootProject.librariesVersions.stripeLibraryVersion
+    /**
+     *  country code picker dependency
+     **/
+    implementation 'com.hbb20:ccp:' + rootProject.librariesVersions.countryPickerLibraryVersion
+    /**
+     * credit card form dependency
+     **/
+    implementation 'com.braintreepayments:card-form:' + rootProject.librariesVersions.creditCardFormLibraryVersion
+    /**
+     *  label view on image library dependency
+     **/
+    implementation 'com.github.linger1216:labelview:v' + rootProject.librariesVersions.labelViewLibraryVersion
+    /**
+     * material search view dependency
+     **/
+    implementation 'com.miguelcatalan:materialsearchview:' + rootProject.librariesVersions.materialSearchViewLibraryVersion
+    /**
+     *  alerter library dependency
+     **/
+    implementation 'com.tapadoo.android:alerter:' + rootProject.librariesVersions.alerterLibraryVersion
+    /**
+     * card slider layout manager for recyclerView dependency
+     **/
+    implementation 'com.ramotion.cardslider:card-slider:' + rootProject.librariesVersions.cardSliderLibraryVersion
+    /**
+     * parallax image view dependency
+     **/
+    implementation 'com.fmsirvent:parallaxeverywhere:' + rootProject.librariesVersions.parallaxEWLibraryVersion
+    /**
+     * time line view for tracking orders dependency
+     **/
+    implementation 'com.github.vipulasri:timelineview:' + rootProject.librariesVersions.timeLineViewLibraryVersion
+    /**
+     *  fab menu group dependency
+     **/
+    implementation 'com.github.clans:fab:' + rootProject.librariesVersions.fabsMenuLibraryVersion
+}
+apply plugin: 'com.google.gms.google-services'

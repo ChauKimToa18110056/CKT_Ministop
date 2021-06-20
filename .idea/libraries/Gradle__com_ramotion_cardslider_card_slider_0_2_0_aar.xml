@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ramotion.cardslider:card-slider:0.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82ade0fb056dba5f6b8198ce4cd7c3e0/jetified-card-slider-0.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82ade0fb056dba5f6b8198ce4cd7c3e0/jetified-card-slider-0.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82ade0fb056dba5f6b8198ce4cd7c3e0/jetified-card-slider-0.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45dc7949f7d0fa215506ca2f47f584da/jetified-card-slider-0.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45dc7949f7d0fa215506ca2f47f584da/jetified-card-slider-0.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45dc7949f7d0fa215506ca2f47f584da/jetified-card-slider-0.2.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

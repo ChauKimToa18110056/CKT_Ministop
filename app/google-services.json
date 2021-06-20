@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "764626471929",
+    "firebase_url": "https://ministop-b8736-default-rtdb.firebaseio.com",
+    "project_id": "ministop-b8736",
+    "storage_bucket": "ministop-b8736.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764626471929:android:521d71d51e8d5db0be0b28",
+        "android_client_info": {
+          "package_name": "CKT.IchiCo.ShoppingNeko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764626471929-jevn8u00agui3u2lqjmbiup1aup4e43q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVOUt7mLGCiQ8rJbo78XqhbkEKCq8lFHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764626471929-jevn8u00agui3u2lqjmbiup1aup4e43q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764626471929:android:4e9aea907a3fcc1cbe0b28",
+        "android_client_info": {
+          "package_name": "CKT.Ministop.Apk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764626471929-jevn8u00agui3u2lqjmbiup1aup4e43q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVOUt7mLGCiQ8rJbo78XqhbkEKCq8lFHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764626471929-jevn8u00agui3u2lqjmbiup1aup4e43q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
